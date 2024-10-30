@@ -1,10 +1,10 @@
-const express = require('express');
+
 const compression = require('compression');
 const cors = require('cors');
 const {indexRouter} = require("./src/router/indexRouter");
 const {userRouter} = require("./src/router/userRouter");
 
-const express = require("express");
+const express = require('express');
 const app = express();
 const port = 3000;
 
