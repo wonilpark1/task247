@@ -1,0 +1,1 @@
+const url = "https://www.task247.store";

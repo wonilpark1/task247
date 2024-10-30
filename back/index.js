@@ -3,8 +3,15 @@ const compression = require('compression');
 const cors = require('cors');
 const {indexRouter} = require("./src/router/indexRouter");
 const {userRouter} = require("./src/router/userRouter");
+
+const express = require("express");
 const app = express();
 const port = 3000;
+
+// express 미들웨어 설정
+ //정적파일 제공
+ app.use(express.static("front"));
+ 
 
 // app.get('/', (req, res) => {
 //   res.send('Hello World!')
